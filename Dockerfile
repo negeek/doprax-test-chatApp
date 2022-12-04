@@ -14,7 +14,6 @@ RUN /chat_env/bin/pip install -r requirements.txt
 COPY . /code/
 
 # Expose ports
-EXPOSE 6378 
 EXPOSE 6379
 EXPOSE 8000 
 
