@@ -8,7 +8,7 @@ WORKDIR /code
 
 # install dependencies
 COPY requirements.txt /code/
-RUN /book_env/bin/pip install -r requirements.txt
+RUN /chat_env/bin/pip install -r requirements.txt
 
 # Copy project
 COPY . /code/
