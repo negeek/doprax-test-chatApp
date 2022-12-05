@@ -1,5 +1,5 @@
 #!/bin/bash
-source /book_env/bin/activate
+source /chat_env/bin/activate
 cd /code
 
 echo "----- Collect static files ------ " 
