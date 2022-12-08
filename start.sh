@@ -9,5 +9,7 @@ echo "-----------Apply migration--------- "
 python manage.py makemigrations 
 python manage.py migrate
 
+
 echo "-----------Run gunicorn--------- "
-gunicorn -b :8000 chatProj.wsgi:application
+#gunicorn -b :8000 chatProj.wsgi:application
+python manage.py runserver 
