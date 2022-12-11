@@ -17,12 +17,14 @@ COPY deployment deployment
 
 COPY deployment/gunicorn.conf /etc/supervisor/conf.d/gunicorn.conf
 COPY deployment/daphne.conf /etc/supervisor/conf.d/daphne.conf
+COPY deployment/nginx.conf  /etc/nginx/nginx.conf
 
 RUN mkdir /logs
 RUN mkdir /run/daphne
 
 # Expose ports
 EXPOSE 8000 
+EXPOSE 8001
 
 RUN chmod +x /code/start.sh
 RUN chmod +x /code/deployment/start_app.sh
