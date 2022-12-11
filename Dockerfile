@@ -20,6 +20,7 @@ COPY deployment deployment
 
 COPY deployment/gunicorn.conf /etc/supervisor/conf.d/gunicorn.conf
 COPY deployment/daphne.conf /etc/supervisor/conf.d/daphne.conf
+COPY deployment/nginx.conf /etc/nginx/conf.d/nginx.conf
 
 RUN mkdir /logs
 RUN mkdir /run/daphne
