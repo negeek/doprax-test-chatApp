@@ -1,4 +1,5 @@
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+FROM nginx:alpine
 
 
 RUN apt-get update && apt-get install -y python3 python3-pip python3-venv supervisor
@@ -20,7 +21,7 @@ COPY deployment deployment
 
 COPY deployment/gunicorn.conf /etc/supervisor/conf.d/gunicorn.conf
 COPY deployment/daphne.conf /etc/supervisor/conf.d/daphne.conf
-COPY deployment/nginx.conf /etc/nginx/conf.d/nginx.conf
+
 
 RUN mkdir /logs
 RUN mkdir /run/daphne

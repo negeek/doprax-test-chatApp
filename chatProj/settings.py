@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r%xwer&d#k4wb+l9q!0&=vz8l*gwn@71-c2kr0agn6c+_$^vmr
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = [' https://chat-appaygz.eu-ccofhtfzmvsd.dopraxapp.com']
 
 
 # Application definition
